@@ -2,12 +2,17 @@
 .content {
     max-width: 960px;
     margin: 0 auto;
+    font-family: "Oswald";
   }
  
+ h1, h2 {
+  font-family: "Aref Ruqaa Ink"
+ }
+  
   header,
   footer {
-    background-color: #a7b4b2;
-    color: #69342a;
+    background-color: #8fa7c1;
+    color: #87392a;
     padding: 2rem;
     border-radius: 2rem;
     text-align: center;
