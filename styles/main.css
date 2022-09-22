@@ -2,34 +2,25 @@
 .content {
     max-width: 960px;
     margin: 0 auto;
-    font-family: "Oswald";
+    font-family: "Oswald", sans-serif;
   }
  
  h1, h2 {
-  font-family: "Aref Ruqaa Ink";
+  font-family: "Aref Ruqaa Ink", serif;
+  
  }
   
   header,
   footer {
-    background-color: #8fa7c1;
-    color: #87392a;
+    background-color: #adbfd4;
+    color: #7a3021;
     padding: 2rem;
     border-radius: 2rem;
     text-align: center;
   }
   
-  header {
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 1;
-  }
 
-  header h1 {
-    grid-column: 2;
-    padding-top: 3em;
-  }
   main h2 {
-    padding: .5rem;
     border-bottom: 1px solid black;
   }
   
