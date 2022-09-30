@@ -1,0 +1,53 @@
+
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: "Oswald", sans-serif;
+  }
+ 
+ h1, h2, h3, h4, h5, h6 {
+  font-family: "Aref Ruqaa Ink", serif;
+  
+ }
+  
+  header,
+  footer {
+    background-color: #adbfd4;
+    color: #7a3021;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+  }
+
+  nav ul{
+    list-style-type: none;
+  }
+
+  nav li{
+    text-align: center;
+    background-color: #7a3021;
+    padding: 5px;
+  }
+  nav a{
+    color: #adbfd4;
+  }
+  a:hover{
+    color: black;
+    background-color:#adbfd4;
+  }
+  main h2 {
+    border-bottom: 1px solid black;
+  }
+  
+  footer a {
+    color: #87392a;
+  }
+  .updated {
+    margin: .25rem;
+  }
+  #blue{
+    background-color:#adbfd4;
+  }
+  #brown{
+    background-color: #87392a;
+  }
