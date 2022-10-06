@@ -1,0 +1,81 @@
+
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: "Oswald", sans-serif;
+  }
+ 
+ h1, h2, h3, h4, h5, h6 {
+  font-family: "Aref Ruqaa Ink", serif;
+  
+ }
+  
+  header,
+  footer {
+    background-color: #adbfd4;
+    color: #7a3021;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+  }
+
+  header {
+    display:grid;
+  }
+
+nav button{
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+}
+nav {
+    background-color: #7a3021;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #fff;
+    border-top: 1px solid rgba(0,0,0,0.5);
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: #adbfd4;
+}
+
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+nav ul {
+    display: none;
+}
+nav ul.open {
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(1){
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(2){
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1){
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2){
+    display: block;
+}
