@@ -1,6 +1,14 @@
 @media only screen and (min-width: 64rem){
+    header{
+        grid-template-columns: 20% 20% 50% 5% 5%;
+    } 
+
     nav button{
         display: none;
+    }
+    nav{
+        grid-column: 3;
+        grid-row: 1;
     }
     
     nav ul{
@@ -9,5 +17,32 @@
     
     nav li{
         flex: auto;
+    }
+
+    main{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #hero{
+        grid-area: 1/2/4/4;
+    }
+    #spotlights{
+        grid-area: 1/5/5/4;
+    }
+    
+    #newsRelease{
+        grid-area: 4/2/5/4;
+    }
+
+    #join{
+        grid-column: 1;
+    }
+
+    #spotlights{
+        display: block;
+    }
+
+    #spotlight3{
+        display: block;
     }
 }
