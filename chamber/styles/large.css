@@ -1,6 +1,6 @@
 @media only screen and (min-width: 64rem){
     header{
-        grid-template-columns: 20% 20% 50% 5% 5%;
+        grid-template-columns: 10% 20% 60% 5% 5%;
     } 
 
     nav button{
@@ -9,14 +9,26 @@
     nav{
         grid-column: 3;
         grid-row: 1;
+        background-color: #adbfd4;
     }
     
     nav ul{
         display: flex;
+        background-color: #adbfd4
     }
     
     nav li{
         flex: auto;
+    }
+
+    nav ul li a {
+        border-top: none;
+        color: #7a3021;
+    }
+
+    nav ul li.active a {
+        background-color: rgba(0,0,0,0.2);
+        color: #000;
     }
 
     main{

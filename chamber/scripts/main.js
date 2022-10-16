@@ -15,6 +15,11 @@ const monthsofYear = ["January", "February", "March", "April", "May", "June", "J
 let currentMonth = monthsofYear[d.getMonth()];
 document.querySelector('#today').textContent = dayofWeek +", " + d.getDate() + " " + currentMonth + " " + d.getFullYear();
 
+//Banner For Monday & Tuesday
+if (d==='1'||d==='2'){
+    document.querySelector('#banner').textContent = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.';
+}
+
 //Live Copyright and Updated on Footer
 document.querySelector('#currentyear').textContent = new Date().getFullYear();
 document.querySelector('#lastupdate').textContent = document.lastModified;
