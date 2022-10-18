@@ -156,9 +156,11 @@ section{
 }
 
 #hero button{
-    position: absolute;
-    top: 30rem;
-    left: 20rem;
+    grid-area: 2/2/3/3;
+    background-color: rgba(27, 146, 209, 0.5);
+    color: #eee;
+    border-color: #eee;
+
 }
 #spotlights div{
     border: solid rgba(0,0,0,0.2);

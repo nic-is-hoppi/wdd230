@@ -11,8 +11,9 @@
         grid-row: 1;
         background-color: #adbfd4;
     }
-    
-    nav ul{
+
+    #primaryNav{
+        position: static;
         display: flex;
         background-color: #adbfd4
     }
