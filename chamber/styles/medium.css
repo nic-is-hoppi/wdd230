@@ -19,6 +19,12 @@ main{
     grid-template-columns: 70% 30%;
 }
 
+#banner{
+    position: absolute;
+    top: 13rem;
+    left: 15rem;
+}
+
 #hero{
     grid-column: 1/3;
 }

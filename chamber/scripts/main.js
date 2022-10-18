@@ -16,7 +16,7 @@ let currentMonth = monthsofYear[d.getMonth()];
 document.querySelector('#today').textContent = dayofWeek +", " + d.getDate() + " " + currentMonth + " " + d.getFullYear();
 
 //Banner For Monday & Tuesday
-if (d==='1'||d==='2'){
+if (dayofWeek=='Monday'||dayofWeek=='Tuesday'){
     document.querySelector('#banner').textContent = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.';
 }
 

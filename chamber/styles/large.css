@@ -35,6 +35,12 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
+    #banner{
+        position: absolute;
+        top: 13rem;
+        left: 25rem;
+    }
+
     #hero{
         grid-area: 1/2/4/4;
     }
