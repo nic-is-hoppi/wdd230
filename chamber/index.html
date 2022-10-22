@@ -40,7 +40,12 @@
       <main>
         <div id="banner"></div>
         <section id="hero">
-          <img src="images/northern_lights_small-min.jpg" alt="Northern Lights over Cook Inlet photo credit to John Hopkinson">
+          <!---<img src="images/northern_lights_small-min.jpg" alt="Northern Lights over Cook Inlet photo credit to John Hopkinson">--->
+          <picture>
+            <source media="(min-width:650px)" srcset="images/wdd230-org_Medium.jpg">
+            <source media="(min-width:465px)" srcset="images/wdd230-org_Small.jpg">
+            <img src="images/wdd230-org_Large.jpg" alt="Flowers" style="width:auto;">
+          </picture>
           <h3>Welcome to Denali</h3>
           <button>Join The Chamber</button>
         </section>
@@ -50,6 +55,9 @@
         </section>
         <section id="Weather">
           <h3>Weather</h3>
+          <p>Currently: <span id="temp"></span>&#8457;</p>
+          <P>Wind Speed: <span id="windy"></span>MPH</P>
+          <p>Windchill: <span id="chill"></span>&#8457;</p>
         </section>
         <section id="newsRelease">
           <h3>News Release</h3>
@@ -87,6 +95,7 @@
       </footer>
     </div>
     <script src="scripts/main.js"></script>
+    <script src="scripts/windchill.js"></script>
 
   </body>
 </html>
