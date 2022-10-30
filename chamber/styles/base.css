@@ -137,6 +137,28 @@ section{
     margin: .5rem  
 }
 
+#join{
+    display: none;
+}
+
+footer{
+    padding: .5rem;
+}
+footer img{
+    border-radius: .5rem;
+}
+
+footer h5, p{
+    padding: .2rem;
+    margin: .2rem;;
+}
+
+#copyrightInfo{
+    padding: .2rem;
+    margin: .2rem;;
+    border-top: solid rgba(0,0,0,0.2);
+}
+
 #hero{
     padding: 0;
     border: none;
@@ -169,24 +191,8 @@ section{
 #spotlight3{
     display: none;
 }
-#join{
-    display: none;
+
+#discoverMain{
+    display: block;
 }
 
-footer{
-    padding: .5rem;
-}
-footer img{
-    border-radius: .5rem;
-}
-
-footer h5, p{
-    padding: .2rem;
-    margin: .2rem;;
-}
-
-#copyrightInfo{
-    padding: .2rem;
-    margin: .2rem;;
-    border-top: solid rgba(0,0,0,0.2);
-}

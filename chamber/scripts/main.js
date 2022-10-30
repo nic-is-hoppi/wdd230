@@ -23,5 +23,5 @@ if (dayofWeek=='Monday'||dayofWeek=='Tuesday'){
 }
 
 //Live Copyright and Updated on Footer
-document.querySelector('#currentyear').textContent = new Date().getFullYear();
-document.querySelector('#lastupdate').textContent = document.lastModified;
+document.querySelector('.currentyear').textContent = new Date().getFullYear();
+document.querySelector('.lastupdate').textContent = document.lastModified;
