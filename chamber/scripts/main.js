@@ -25,3 +25,14 @@ if (dayofWeek=='Monday'||dayofWeek=='Tuesday'){
 //Live Copyright and Updated on Footer
 document.querySelector('.currentyear').textContent = new Date().getFullYear();
 document.querySelector('.lastupdate').textContent = document.lastModified;
+
+//Visit Log for Discover Page
+const visitsDisplay = document.querySelector('.discoverVisit');
+let numVisits = Number(window.localStorage.getItem('visits-ls'));
+if (numVisits !== 0){
+    visitsDisplay.textContent = numVisits;
+}else{
+    visitsDisplay.textContent = 'This is your first visit';
+}
+numVisits++;
+localStorage.setItem('visits-ls', numVisits);
