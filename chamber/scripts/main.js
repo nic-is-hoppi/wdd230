@@ -18,5 +18,3 @@ document.querySelector('#today').textContent = dayofWeek +", " + d.getDate() + "
 //Live Copyright and Updated on Footer
 document.querySelector('.currentyear').textContent = new Date().getFullYear();
 document.querySelector('.lastupdate').textContent = document.lastModified;
-
-//Visit Log for Discover Page
