@@ -5,4 +5,4 @@ if (numVisits !== 0){
     document.querySelector('.discoverVisit').textContent = 'This is your first visit';
 }
 numVisits++;
-localStorage.setItem('visits-ls', numVisits);
+window.localStorage.setItem('visits-ls', numVisits);
