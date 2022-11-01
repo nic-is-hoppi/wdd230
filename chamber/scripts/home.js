@@ -6,5 +6,5 @@ let dayofWeek = daysofWeek[d.getDay()]
 if (dayofWeek=='Monday'||dayofWeek=='Tuesday'){
     document.querySelector('#banner').textContent = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.';
 }else{
-    document.querySelector('#banner').styles.display = 'none';
+    document.querySelector('#banner').style.display = 'none';
 }
