@@ -81,60 +81,24 @@ footer p{
     grid-column: 1/5;
 }
 
-#cookCard{
-    display: grid;
-    grid-template-columns: 60% 40%;
+picture.left img{
+width: 250px;
 }
-#cookCard img{
-    grid-row: 1/3;
+picture.right img{
+    width: 250px;
+    }
+
+.left{
+    float: left;
+    margin-right: .5rem;
+    
 }
-#cookCard p{
-    grid-area: 2/2/3/3;
+
+.right{
+    float: right;
+    margin-left: .5rem;
 }
-#denaliCard{
-    display: grid;
-    grid-template-columns: 40% 60%;
-}
-#denaliCard picture{
-    grid-column: 2;
-}
-#denaliCard h3{
-    grid-row: 1;
-}
-#roadRunnerCard{
-    display: grid;
-    grid-template-columns: 60% 40%;
-}
-#roadRunnerCard p{
-    grid-column: 2;
-}
-#bikeCard{
-    display: grid;
-    grid-template-columns: 40% 60%;
-}
-#bikeCard picture{
-    grid-column: 2;
-}
-#bikeCard h3{
-    grid-row: 1;
-}
-#iceSculptCard{
-    display: grid;
-    grid-template-columns: 60% 40%;
-}
-#iceSculptCard p{
-    grid-column: 2;
-}
-#rondyCard{
-    display: grid;
-    grid-template-columns: 40% 60%;
-}
-#rondyCard picture{
-    grid-column: 2;
-}
-#rondyCard h3{
-    grid-row: 1;
-}
+
 .hover:hover{
 box-shadow: 0 0 50px #333;
 border-radius: 15px 150px;
