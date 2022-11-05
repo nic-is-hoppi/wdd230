@@ -8,3 +8,4 @@ if (dayofWeek=='Monday'||dayofWeek=='Tuesday'){
 }else{
     document.querySelector('#banner').style.display = 'none';
 }
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Denali Chamber of Commerce</title>
+    <meta
+      name="description"
+      content="Home Page for Denali Chamber of Commerce web page project"
+    />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Oswald&display=swap" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet"/>
+    <link href="styles/medium.css" rel="stylesheet"/>
+    <link href="styles/large.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <img src="images/mountain1-11-min.jpg"
+        alt="Logo of a Mountain">
+        <h2>Denali Chamber</h2>
+        <a href="https://www.facebook.com/" target="_blank"
+          id="facebook"><img src="images/facebook_icon-min.png" alt="Facebook icon"></a>
+        <a href="https://www.instagram.com/" target="_blank"
+        id="instagram"><img src="images/Instagram_icon-min.png" alt="Instagram icon"></a>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="discover.html">Discover</a></li>
+              <li class="active"><a href="join.html">Join</a></li>
+              <li><a href="#">Typography</a></li>
+            </ul>
+          </nav>
+          <div id="today"></div>
+      </header>
+      <main class="join">
+        <form id="joinForm" action="thankyou.html" method="get">
+          <fieldset> 
+            <legend>Applicant Information</legend>
+          <label class="top" for="firstName">*First Name: </label><input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+
+            <label class="top" for="lastName">*Last Name: </label><input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+
+            <label class="top" for="businessPosition">Business Position: </label><input type="text" id="businessPosition" name="businessPosition" title="Business Position"  placeholder="Chief Bottle Washer">
+
+            <label class="top" for="emailAddress">*Email Address: </label><input type="email" id="emailAddress" name="emailAddress" placeholder="youremail@gmail.com" required>
+
+            <label class="top" for="cellphone">*Cellphone Number: </label><input type="tel" id="cellphone" name="cellphone" placeholder="(XXX)XXX-XXXX" required>
+
+            <label class="top" for="businessName">*Business Name: </label><input type="text" id="businessName" name="businessName" title="Business Name" placeholder="i.e. Denali Stop & Shop" required>
+          </fieldset> 
+          <fieldset>
+            <legend>Membership Type</legend>
+            <label for="nonProfit"><input type="radio" id="nonProfit" name="membership" value="nonProfit">NP Membership: $0 Membership Fee for Non Profit Orginizations only. Comes with Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus perferendis atque sunt expedita totam doloribus libero, facilis laudantium accusamus modi fuga quis, quasi maxime sint vero porro ullam dolorem nesciunt.</label>
+            <label for="bronze"><input type="radio" id="bronze" name="membership" value="bronze">Bronze Membership: $10 Membership Fee a month. Comes with Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus perferendis atque sunt expedita totam doloribus libero, facilis laudantium accusamus modi fuga quis, quasi maxime sint vero porro ullam dolorem nesciunt.</label>
+            <label for="silver"><input type="radio" id="silver" name="membership" value="siver">Silver Membership: $15 Membership Fee a month. Comes with Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus perferendis atque sunt expedita totam doloribus libero, facilis laudantium accusamus modi fuga quis, quasi maxime sint vero porro ullam dolorem nesciunt.</label>
+            <label for="gold"><input type="radio" id="gold" name="membership" value="gold">Gold Membership: $20 Membership Fee a month. Comes with Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus perferendis atque sunt expedita totam doloribus libero, facilis laudantium accusamus modi fuga quis, quasi maxime sint vero porro ullam dolorem nesciunt.</label>
+          </fieldset> 
+          <fieldset>
+            <legend>Business Description</legend>
+            <label class="top" for="businessDescript">Description of Business: </label><textarea id="businessDescript" name="businessDescript" rows="4" cols="60"></textarea> 
+          </fieldset>
+            <input type="hidden" id="dateTime" name="dateTime" value="">
+            <button type="submit" name="btn">Submit</button>
+
+        </form>
+      </main>
+      <footer>
+        <img src="images/mountain1-11.jpg"
+        alt="Logo of a Mountain">
+        <h5>Denali Chamber</h5>
+        <p id="address">646 Candycane Ln.<br>
+        Denali, Alaska 99518</p>
+        <p id="email">info@denalichamber.com</p>
+        <p id="phone">(907)707-3727</p>
+        <p id="map">Location Map</p>
+        <div id="copyrightInfo">
+          &copy; <span class="currentyear"></span> Denali Chamber | Nicolas M. Hopkinson | WDD 230 Project
+          <div class="updated">Last Updated: <span class="lastupdate"></span></div>
+        </div>
+
+      </footer>
+    </div>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/join.js"></script>
+
+  </body>
+</html>

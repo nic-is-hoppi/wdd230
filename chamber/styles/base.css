@@ -196,3 +196,25 @@ footer h5, p{
     display: block;
 }
 
+input{
+    padding: .5rem;
+}
+
+form fieldset {
+    margin:.5rem;
+    border: 1px solid #7a3021;
+    border-radius: 4px;
+    padding: .5rem;
+    display: grid;
+    align-content: center;
+}
+
+form legend{
+    color: #7a3021;
+    margin: 0 .75rem;
+    padding: 0 .25rem;
+}
+
+form label.top{
+    color: #7a3021;
+}

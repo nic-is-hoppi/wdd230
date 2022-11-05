@@ -139,4 +139,20 @@ footer p{
 box-shadow: 0 0 50px #333;
 border-radius: 15px 150px;
 }
+
+.join{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.join form{
+    grid-column: 2/4;
+    grid-gap: .5rem;
+    align-content: center;
+    justify-content: center;
+    display: grid;
+}
+input{
+    margin: .25rem;
+}
 }
