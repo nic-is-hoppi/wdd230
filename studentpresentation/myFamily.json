@@ -1,0 +1,76 @@
+{
+    "family": [
+      {
+        "name": "John",
+        "lastname": "Hopkinson",
+        "birthdate": "07 August 1970",
+        "birthplace": "Utah",
+        "numofchildren": 8,
+        "living": true
+      },
+      {
+        "name": "Tressa",
+        "lastname": "Oborn-Hopkinson",
+        "birthdate": "06 April 1972",
+        "birthplace": "Alaska",
+        "numofchildren": 8
+      },
+      {
+        "name": "Colton",
+        "lastname": "Hopkinson",
+        "birthdate": "10 November 1991",
+        "birthplace": "Navada",
+        "numofchildren": 4
+      },
+      {
+        "name": "Victoria",
+        "lastname": "Hopkinson",
+        "birthdate": "18 June 1993",
+        "death": "02 September 1898",
+        "birthplace": "Alaska",
+        "numofchildren": null
+      },
+      {
+        "name": "Kalayna",
+        "lastname": "Hopkinson-Blanch",
+        "birthdate": "27 February 1995",
+        "birthplace": "Alaska",
+        "numofchildren": 2
+      },
+      {
+        "name": "Lauren",
+        "lastname": "Hopkinson",
+        "birthdate": "08 September 1996",
+        "birthplace": "Utah",
+        "numofchildren": null
+      },
+      {
+        "name": "Nicolas",
+        "lastname": "Hopkinson",
+        "birthdate": "29 October 1998",
+        "birthplace": "Utah",
+        "numofchildren": null
+      },
+      {
+        "name": "Genevieve",
+        "lastname": "Hopkinson",
+        "birthdate": "17 September 2000",
+        "birthplace": "Utah",
+        "numofchildren": null
+      },
+      {
+        "name": "Allan",
+        "lastname": "Hopkinson",
+        "birthdate": "11 April 2002",
+        "birthplace": "Alaska",
+        "numofchildren": null
+      },
+      {
+        "name": "Ian",
+        "lastname": "Hopkinson",
+        "birthdate": "21 July 2004",
+        "birthplace": "Alaska",
+        "numofchildren": null
+      }
+    ]
+  }
