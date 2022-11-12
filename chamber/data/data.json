@@ -1,0 +1,76 @@
+{
+    "companies": [
+      {
+        "name": "Artic Roadrunner",
+        "address": "5300 Old Seward Hwy, Anchorage, AK 99518",
+        "phonenumber": "(907) 561-1245",
+        "website": "http://places.singleplatform.com/arctic-roadrunner-2/menu",
+        "image": 8,
+        "membership": "gold"
+      },
+      {
+        "name": "Santa Claus House",
+        "address": "101 St Nicholas Dr, North Pole, AK 99705",
+        "phonenumber": "(907) 488-2200",
+        "website": "https://www.santaclaushouse.com/visit.asp",
+        "image": 8,
+        "membership": "gold"
+      },
+      {
+        "name": "Carrs-Safeway",
+        "address": "1650 W Northern Lights Blvd, Anchorage, AK 99517",
+        "phonenumber": "(907) 339-0500",
+        "website": "https://www.carrsqc.com/",
+        "image": 8,
+        "membership": "silver"
+      },
+      {
+        "name": "Alaska Grizzly Lodge",
+        "address": "1470 Westmoreland Ave, Fairbanks, AK 99712",
+        "phonenumber": "(907) 488-7475",
+        "website": "http://www.alaskagrizzlylodge.com/",
+        "image": 8,
+        "membership": "silver"
+      },
+      {
+        "name": "Denali Rainbow Village RV Park & Motel",
+        "address": "Mile 238.6 Parks Hwy, Denali Park, AK 99755",
+        "phonenumber": "(907) 683-7777",
+        "website": "https://www.denalirv.com/",
+        "image": 8,
+        "membership": "bronze"
+      },
+      {
+        "name": "Alaska Native Heritage Center",
+        "address": "8800 Heritage Center Dr Anchorage, AK 99504-6100",
+        "phonenumber": "(907) 330-8000",
+        "website": "https://www.alaskanative.net/",
+        "image": 8,
+        "membership": "bronze"
+      },
+      {
+        "name": "BlueWater BaseCamp",
+        "address": "36474 BaseCamp Ct Chugiak, AK 99567",
+        "phonenumber": "(907) 632-3301",
+        "website": "https://www.instagram.com/bluewaterbasecamp/",
+        "image": 8,
+        "membership": "bronze"
+      },
+      {
+        "name": "Crow Creek Historic Gold Mine",
+        "address": "Mile 3.1 Crow Creek Rd Girdwood, AK 99587",
+        "phonenumber": "(907) 229-3105",
+        "website": "https://www.crowcreekgoldmine.com/",
+        "image": 8,
+        "membership": "gold"
+      },
+      {
+        "name": "Alaska Private Touring",
+        "address": "600 Barrow St Ste 200 B Anchorage, AK 99501",
+        "phonenumber": "(907) 375-6582",
+        "website": "https://alaskaprivatetouring.com/",
+        "image": 8,
+        "membership": "gold"
+      }
+    ]
+  }
