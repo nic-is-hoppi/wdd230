@@ -226,3 +226,18 @@ form legend{
 form label.top{
     color: #7a3021;
 }
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: .5rem;
+  }
+
+  .list{
+    display: block;
+    justify-content: left;
+  }
+
+  .list section img{
+    display: none;
+  }

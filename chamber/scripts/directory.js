@@ -1,4 +1,4 @@
-const requestURL = '';
+const requestURL = 'https://nic-is-hoppi.github.io/wdd230/chamber/data/data.json';
 const cards = document.querySelector('.cards');
 
 fetch(requestURL)
@@ -7,36 +7,48 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
-   const prophets = jsonObject['prophets'];
-   prophets.forEach(displayProphets);
+   const companies = jsonObject['companies'];
+   companies.forEach(displayCompanies);
   });
 
-   function displayProphets(prophet) {    
+   function displayCompanies(company) {    
         
         let card = document.createElement('section');
-        let h2 = document.createElement('h2');
-        let portrait = document.createElement('img');
-        let place = document.createElement('p');
-        let dob = document.createElement('p');
+        let name = document.createElement('h2');
+        let logo = document.createElement('img');
+        let address = document.createElement('p');
+        let phone = document.createElement('p');
 
-        let prophetName = `${prophet.name} ${prophet.lastname}`;
-       
-        h2.textContent = prophetName;
-        card.appendChild(h2);
+        name.textContent = company.name;
+        card.appendChild(name);
 
-         dob.textContent = `Date of Birth:  ${prophet.birthdate}`;
-        card.appendChild(dob);
+        logo.setAttribute('src', company.image);
+        logo.setAttribute('alt', `Logo for ${company.name}`);
+        logo.setAttribute('loading', 'lazy');
+        card.appendChild(logo);
 
-        place.textContent = `Place of Birth: ${prophet.birthplace}`;
-        card.appendChild(place);
+         phone.textContent = company.phonenumber;
+        card.appendChild(phone);
+
+        address.textContent = company.address;
+        card.appendChild(address);
         
-        portrait.setAttribute('src', prophet.imageurl);
-        portrait.setAttribute('alt', `Portrait of  ${prophetName} President # ${prophet.order}`);
-        portrait.setAttribute('loading', 'lazy');
-        card.appendChild(portrait);
+
 
        
         document.querySelector('div.cards').appendChild(card);
    }
+   
+ const gridbutton = document.querySelector('#grid');
+ const listbutton = document.querySelector('#list');
+ const display = document.querySelector('.cards');
 
- 
+ gridbutton.addEventListener('click', () => {
+    display.classList.add('grid');
+    display.classList.remove('list');
+ });
+
+ listbutton.addEventListener('click', () => {
+    display.classList.add('list');
+    display.classList.remove('grid');
+ });

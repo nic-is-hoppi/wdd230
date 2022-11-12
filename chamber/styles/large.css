@@ -32,10 +32,6 @@
         color: #000;
     }
 
-    main{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
     #banner{
         position: absolute;
         top: 13rem;
