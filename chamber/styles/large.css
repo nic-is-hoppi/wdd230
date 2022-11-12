@@ -32,6 +32,10 @@
         color: #000;
     }
 
+    .indexMain{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
     #banner{
         position: absolute;
         top: 13rem;

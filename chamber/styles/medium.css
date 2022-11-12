@@ -14,6 +14,10 @@ nav{
     margin:.5rem;
 }
 
+.indexMain{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
 
 #banner{
     position: absolute;
