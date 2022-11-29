@@ -12,7 +12,6 @@ fetch(requestURL)
   });
 
    function displayCompanies(company) {    
-        
         let card = document.createElement('section');
         let name = document.createElement('h2');
         let logo = document.createElement('img');
@@ -32,9 +31,6 @@ fetch(requestURL)
 
         address.textContent = company.address;
         card.appendChild(address);
-        
-
-
        
         document.querySelector('div.cards').appendChild(card);
    }

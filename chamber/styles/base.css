@@ -237,7 +237,11 @@ form label.top{
     display: block;
     justify-content: left;
   }
-
+  .list section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
   .list section img{
     display: none;
   }
