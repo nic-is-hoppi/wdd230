@@ -45,7 +45,7 @@
     #hero{
         grid-area: 1/2/4/4;
     }
-    #spotlights{
+    .spotlights{
         grid-area: 1/5/5/4;
     }
     
@@ -57,7 +57,7 @@
         grid-column: 1;
     }
 
-    #spotlights{
+    .spotlights{
         display: block;
     }
 
