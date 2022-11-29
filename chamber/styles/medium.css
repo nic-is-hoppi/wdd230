@@ -47,6 +47,11 @@ nav{
     grid-column: 1/3;
 }
 
+#join a{
+    text-decoration: none;
+    color: black;
+}
+
 footer{
     display: grid;
     grid-template-columns: 15% 20% 35% 30%;
