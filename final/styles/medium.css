@@ -1,0 +1,16 @@
+@media only screen and (min-width: 32.5rem){
+    header{
+        display: grid;
+        grid-template-columns: 20% 20% 35% 5% 5% 5% 10%;
+        grid-gap: 10px;
+    }
+
+    #linkedin{
+        grid-column: 4/5;
+    }
+
+    nav{
+        grid-column: 7/8;
+    }
+
+}

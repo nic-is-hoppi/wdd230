@@ -1,0 +1,148 @@
+.content {
+    max-width: 1460px;
+    margin: 0 auto;
+    font-family: "Oswald", sans-serif;
+  }
+ 
+ h1, h2, h3, h4, h5, h6 {
+  font-family: "Aref Ruqaa Ink", serif;
+  padding: .5rem;
+  
+ }
+
+ header,
+  footer {
+    background-color: #ebb80ea3;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding:.5rem;
+  }
+
+  header {
+    display:flex;
+    padding: 2rem;
+    align-items: center;
+  }
+
+ nav button{
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: rgb(6, 6, 6);
+    background-color: #0eeb75d0;
+    border-radius: .5rem;
+    
+}
+nav {
+    grid-column: 5;
+    border-radius: .5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #ebb70e;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #333;
+    border-top: 1px solid rgba(0,0,0,0.5);
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: #7bff00;
+}
+
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+nav ul {
+    display: none;
+}
+nav ul.open {
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(1){
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(2){
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1){
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2){
+    display: block;
+}
+
+#primaryNav{
+    position: absolute;
+    top: 15rem;
+    left: .5rem;
+    width: 100%;
+}
+
+.indexMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section{
+    justify-content: center;
+    padding: .75rem;
+    border: solid rgba(0,0,0,0.2);
+    border-radius: .5rem;  
+    color:#000;
+    margin: .5rem  
+}
+
+#hero{
+    grid-column: 1/3;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#hero picture img{
+    max-width: 100%;
+}
+
+#soCal{
+    grid-column: 1/3;
+}
+
+#weather{
+    grid-column: 1/3;
+}
+
+.fresh section{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fresh section picture img{
+    max-width: 100%;
+}
+
+#orderForm{
+    margin: .5rem;
+    padding: .75rem;
+    display: grid;
+    align-content: center;
+}
+
+input{
+    padding: .5rem;
+}

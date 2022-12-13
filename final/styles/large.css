@@ -1,0 +1,23 @@
+@media only screen and (min-width: 64rem){
+    header{
+        grid-template-columns: 10% 20% 50% 5% 5% 5%;
+    } 
+
+    nav button{
+        display: none;
+    }
+
+    nav{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    #primaryNav{
+        position: static;
+        display: flex;
+        background-color: #40dd1081
+    }
+
+    nav ul li a {
+        border: none;
+    }
+}
