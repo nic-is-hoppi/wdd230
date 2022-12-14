@@ -29,7 +29,6 @@ fetch(requestURL)
 //Check Input
 $("input:checkbox").click(function() {
     let bol = $("input:checkbox:checked").length >=3;
-
     $("input:checkbox").not(":checked").attr("disabled",bol);
 });
 
@@ -49,6 +48,7 @@ function displayOrder() {
     phone.textContent = document.querySelector('#cellphone').value;
     document.querySelector('#output').appendChild(phone);
     fruits.textContent = document.querySelectorAll('.options');
+    document.querySelector('#output').appendChild(fruits);
     instruction.textContent = document.querySelector('#specialInstruct').value;
     document.querySelector('#output').appendChild(instruction);
 
