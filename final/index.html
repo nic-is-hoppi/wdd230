@@ -52,7 +52,7 @@
         </section>
 
         <section id="previousOrders">
-          <p>You've had <span id="prevOrders"></span> Bountiful Drinks before.</p>
+          <p>You've had <span class="prevOrders"></span> Bountiful Drinks before.</p>
         </section>
 
         <section id="soCal">
@@ -62,22 +62,27 @@
 
         <section id="weather">
             <h3>Weather</h3>
+            <div>
+              <p>Today</p>
             <figure>
               <img src="" alt="" id="weatherIcon"/>
               <figcaption></figcaption>
             </figure>
             <p>Currently: <span id="temp"></span> &#8457;</p>
-            <p>Humidity: <span id="humid"></span></p>
-            <div id="forcast"></div>
+            <p>Humidity: <span id="humid"></span>%</p>
+            </div>
           </section>
       </main>
       <footer>
         <div id="copyrightInfo">
           &copy; <span class="currentyear"></span> Bountiful Foods | Nicolas M. Hopkinson | WDD 230 Project | Weather Data provided by openweathermap.org
+          <p>Call us at: (909)970-0135 | Email us at: info@bountifulfoods.com</p>
           <div class="updated">Last Updated: <span class="lastupdate"></span></div>
         </div>
 
       </footer>
   </div>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/weather.js"></script>
   </body>
 </html>
