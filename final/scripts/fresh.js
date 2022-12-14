@@ -19,6 +19,7 @@ fetch(requestURL)
         input.setAttribute('name', 'options');
         input.setAttribute('class', 'options')
         input.setAttribute('value', `${option.name}`);
+        input.setAttribute('onclick', 'checkboxes()');
         document.querySelector('div#optionList').appendChild(input);
 
         label.textContent = option.name;
@@ -27,10 +28,13 @@ fetch(requestURL)
    }
    
 //Check Input
-document.querySelector("input:checkbox").click(function() {
-    let bol = document.querySelector("input:checkbox:checked").length >=3;
-    document.querySelector("input:checkbox").not(":checked").attr("disabled",bol);
-});
+function checkboxes() {
+   let checkBoxes = document.getElementsByClassName('options:checked');
+        if(checkBoxes.length > 4){
+            let unchecked = document.getElementsByClassName('options');
+   }
+
+}
 
 
 //Display Order Information
