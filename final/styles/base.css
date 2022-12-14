@@ -170,6 +170,17 @@ section{
     align-content: center;
 }
 
+#optionList{
+padding: .5rem;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-gap: 5px;
+}
+
+label{
+    padding: .75rem;
+}
+
 input{
     padding: .5rem;
 }

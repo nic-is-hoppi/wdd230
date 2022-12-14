@@ -20,4 +20,8 @@
     nav ul li a {
         border: none;
     }
+
+    #optionList{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
 }
