@@ -36,7 +36,26 @@ function checkboxes(input){
                alert("You can only pick three options");
        }
 }
-
+//Variables for Counting
+let carbs = 0;
+let protein = 0;
+let fat = 0;
+let sugar = 0;
+let calories = 0;
+//Total carbs etc.
+function addCarbs(fruit){
+    let fruity = document.querySelectorAll('.options:checked');
+    for(i=0; i < fruity.length; i++) {
+    if(fruit.name == fruity[i].value) {
+            carbs += parseFloat(fruit.nutritions.carbohydrates);
+            protein += parseFloat(fruit.nutritions.protein);
+            fat += parseFloat(fruit.nutritions.fat);
+            sugar += parseFloat(fruit.nutritions.sugar);
+            calories += parseFloat(fruit.nutritions.calories);
+        }
+    }
+    return carbs, protein, fat, sugar, calories;
+}
 
 //Display Order Information
 function displayOrder() {    
@@ -57,7 +76,16 @@ function displayOrder() {
     document.querySelector('#output').appendChild(fruits);
     instruction.textContent = document.querySelector('#specialInstruct').value;
     document.querySelector('#output').appendChild(instruction);
-    carbs.textContent = addCarbs();
+    fetch(requestURL)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (jsonObject) {
+      console.table(jsonObject);  // temporary checking for valid response and data parsing
+     const options = jsonObject;
+     options.forEach(addCarbs);
+    });;
+    carbs.textContent = 
     document.querySelector('#output').appendChild(carbs);
 
 }
@@ -70,28 +98,6 @@ function selectedFruits(){
         fruits = fruits + fruity[i].value + " ";
     }
     return fruits;
-}
-
-//Total carbs etc.
-function addCarbs(fruit){
-    let fruity = document.querySelectorAll('.options:checked');
-    let carbs = 0;
-    let protein = 0;
-    let fat = 0;
-    let sugar = 0;
-    let calories = 0;
-
-    for (var i =0; i, fruity.length; i++) {
-        if(fruit.name == fruity[i].value) {
-            carbs = carbs + parseFloat(fruit.carbohydrates);
-            protein = protein + parseFloat(fruit.protein);
-            fat = fat + parseFloat(fruit.fat);
-            sugar = sugar + parseFloat(fruit.sugar);
-            calories = calories + parseFloat(fruit.calories);
-        }
-
-        return `Total Carbohydrates: ${carbs.toFixed(2)} Total Protein: ${protein.toFixed(2)} Total Fat: ${fat.toFixed(2)} Total Sugar: ${sugar.toFixed(2)} Total Calories: ${calories.toFixed(2)}`;
-    }
 }
 
 //Form submission
