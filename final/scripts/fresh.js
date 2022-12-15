@@ -1,13 +1,13 @@
 //Display Options
 const requestURL = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
-
+var options;
 fetch(requestURL)
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
-   const options = jsonObject;
+    options = jsonObject;
    options.forEach(displayOptions);
   });
 
@@ -36,25 +36,28 @@ function checkboxes(input){
                alert("You can only pick three options");
        }
 }
-//Variables for Counting
-let carbs = 0;
-let protein = 0;
-let fat = 0;
-let sugar = 0;
-let calories = 0;
+
 //Total carbs etc.
-function addCarbs(fruit){
+function addCarbs(){
     let fruity = document.querySelectorAll('.options:checked');
+    let carbohydrates = 0;
+    let protein = 0;
+    let fat = 0;
+    let sugar = 0;
+    let calories = 0;
     for(i=0; i < fruity.length; i++) {
-    if(fruit.name == fruity[i].value) {
-            carbs += parseFloat(fruit.nutritions.carbohydrates);
-            protein += parseFloat(fruit.nutritions.protein);
-            fat += parseFloat(fruit.nutritions.fat);
-            sugar += parseFloat(fruit.nutritions.sugar);
-            calories += parseFloat(fruit.nutritions.calories);
+        for(j=0; j < options.length; j++){
+    if(options[j].name == fruity[i].value) {
+            carbohydrates += parseFloat(options[j].nutritions.carbohydrates);
+            protein += parseFloat(options[j].nutritions.protein);
+            fat += parseFloat(options[j].nutritions.fat);
+            sugar += parseFloat(options[j].nutritions.sugar);
+            calories += parseFloat(options[j].nutritions.calories);
+            break;
         }
     }
-    return carbs, protein, fat, sugar, calories;
+    }
+    return `Total Carbohydrates: ${carbohydrates.toFixed(2)} Total Protein: ${protein.toFixed(2)} Total Fat: ${fat.toFixed(2)} Total Sugar: ${sugar.toFixed(2)} Total Calories: ${calories.toFixed(2)}`;
 }
 
 //Display Order Information
@@ -65,6 +68,7 @@ function displayOrder() {
     let fruits = document.createElement('p');
     let instruction = document.createElement('p');
     let carbs = document.createElement('p'); 
+    let date = document.createElement('p');
 
     name.textContent = document.querySelector('#firstName').value;
     document.querySelector('#output').appendChild(name);
@@ -76,17 +80,11 @@ function displayOrder() {
     document.querySelector('#output').appendChild(fruits);
     instruction.textContent = document.querySelector('#specialInstruct').value;
     document.querySelector('#output').appendChild(instruction);
-    fetch(requestURL)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (jsonObject) {
-      console.table(jsonObject);  // temporary checking for valid response and data parsing
-     const options = jsonObject;
-     options.forEach(addCarbs);
-    });;
-    carbs.textContent = 
+    carbs.textContent = addCarbs();
     document.querySelector('#output').appendChild(carbs);
+    date.textContent = document.querySelector('#dateTime').value;
+    document.querySelector('#output').appendChild(date);
+
 
 }
 
