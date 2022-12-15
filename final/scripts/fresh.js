@@ -17,9 +17,9 @@ fetch(requestURL)
 
         input.setAttribute('type', 'checkbox');
         input.setAttribute('name', 'options');
-        input.setAttribute('class', 'options')
+        input.setAttribute('class', 'options');
         input.setAttribute('value', `${option.name}`);
-        input.setAttribute('onclick', 'checkboxes()');
+        input.setAttribute('onclick', 'checkboxes(this)');
         document.querySelector('div#optionList').appendChild(input);
 
         label.textContent = option.name;
@@ -28,12 +28,12 @@ fetch(requestURL)
    }
    
 //Check Input
-function checkboxes() {
-   let checkBoxes = document.getElementsByClassName('options:checked');
-        if(checkBoxes.length > 4){
-            let unchecked = document.getElementsByClassName('options');
-   }
-
+function checkboxes(input){
+    let checkBoxes = document.querySelectorAll('.options:checked');
+            if(checkBoxes.length == 4){
+               input.checked = false; 
+               alert("You can only pick three options");
+       }
 }
 
 
@@ -51,11 +51,21 @@ function displayOrder() {
     document.querySelector('#output').appendChild(email);
     phone.textContent = document.querySelector('#cellphone').value;
     document.querySelector('#output').appendChild(phone);
-    fruits.textContent = document.querySelectorAll('.options');
+    fruits.textContent = selectedFruits();
     document.querySelector('#output').appendChild(fruits);
     instruction.textContent = document.querySelector('#specialInstruct').value;
     document.querySelector('#output').appendChild(instruction);
 
+}
+
+//Fruits that are Selected
+function selectedFruits(){
+    let fruity = document.querySelectorAll('.options:checked');
+    let fruits = '';
+    for (var i = 0; i < fruity.length; i++) {
+        fruits = fruits + fruity[i].value + " ";
+    }
+    return fruits;
 }
 
 //Form submission
