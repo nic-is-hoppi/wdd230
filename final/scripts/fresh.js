@@ -18,12 +18,13 @@ fetch(requestURL)
         input.setAttribute('type', 'checkbox');
         input.setAttribute('name', 'options');
         input.setAttribute('class', 'options');
+        input.setAttribute('id', `${option.name}`);
         input.setAttribute('value', `${option.name}`);
         input.setAttribute('onclick', 'checkboxes(this)');
         document.querySelector('div#optionList').appendChild(input);
 
         label.textContent = option.name;
-        label.setAttribute('for', 'options');
+        label.setAttribute('for', `${option.name}`);
         document.querySelector('div#optionList').appendChild(label);
    }
    
@@ -43,7 +44,8 @@ function displayOrder() {
     let email = document.createElement('p'); 
     let phone = document.createElement('p'); 
     let fruits = document.createElement('p');
-    let instruction = document.createElement('p'); 
+    let instruction = document.createElement('p');
+    let carbs = document.createElement('p'); 
 
     name.textContent = document.querySelector('#firstName').value;
     document.querySelector('#output').appendChild(name);
@@ -55,6 +57,8 @@ function displayOrder() {
     document.querySelector('#output').appendChild(fruits);
     instruction.textContent = document.querySelector('#specialInstruct').value;
     document.querySelector('#output').appendChild(instruction);
+    carbs.textContent = addCarbs();
+    document.querySelector('#output').appendChild(carbs);
 
 }
 
@@ -68,6 +72,28 @@ function selectedFruits(){
     return fruits;
 }
 
+//Total carbs etc.
+function addCarbs(fruit){
+    let fruity = document.querySelectorAll('.options:checked');
+    let carbs = 0;
+    let protein = 0;
+    let fat = 0;
+    let sugar = 0;
+    let calories = 0;
+
+    for (var i =0; i, fruity.length; i++) {
+        if(fruit.name == fruity[i].value) {
+            carbs = carbs + parseFloat(fruit.carbohydrates);
+            protein = protein + parseFloat(fruit.protein);
+            fat = fat + parseFloat(fruit.fat);
+            sugar = sugar + parseFloat(fruit.sugar);
+            calories = calories + parseFloat(fruit.calories);
+        }
+
+        return `Total Carbohydrates: ${carbs.toFixed(2)} Total Protein: ${protein.toFixed(2)} Total Fat: ${fat.toFixed(2)} Total Sugar: ${sugar.toFixed(2)} Total Calories: ${calories.toFixed(2)}`;
+    }
+}
+
 //Form submission
 const form = document.querySelector('#orderForm');
 document.querySelector('#dateTime').value = Date();
@@ -75,5 +101,5 @@ document.querySelector('#dateTime').value = Date();
 form.addEventListener('submit', (event) => {
     numOrders++;
     window.localStorage.setItem('orders-ls', numOrders);
-
+    
 });
